@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartica </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+
+        <!-- PANTALLA 1: Pregunta Principal -->
+        <section id="screen-one" class="screen screen-active">
+            <!-- Decoración: Corazones flotantes -->
+            <div class="floating-hearts">
+                <span class="heart">❤️</span>
+                <span class="heart">💕</span>
+                <span class="heart">💖</span>
+                <span class="heart">💗</span>
+                <span class="heart">💝</span>
+                <span class="heart">❤️</span>
+                <span class="heart">💕</span>
+            </div>
+
+            <div class="content-screen-one">
+                <!-- Título principal -->
+                <h1 class="main-question">
+                    Quieres ser mi<br><span class="highlight">San Valentín</span>
+                </h1>
+
+                <!-- Subtítulo decorativo -->
+                <p class="subtitle">Elige sabiamente, nuestra relacion depende de esto...</p>
+
+                <!-- GIF decorativo inicial -->
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMDF4OG43bnk2M2dnM3l0OTI3Z2tjeXJ6Y3Z6OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/KztT2c4u8mYYUiMKdJ/giphy.gif"
+                        alt="Decoración romántica">
+                </div>
+
+                <!-- Botones -->
+                <div class="button-container">
+                    <!-- Botón NO: Se mueve aleatoriamente -->
+                    <button id="btn-no" class="btn btn-no" data-tooltip="¡Intenta atraparme! 😄">
+                        No
+                    </button>
+
+                    <!-- Botón SÍ: Principal -->
+                    <button id="btn-yes" class="btn btn-yes">
+                        sip
+                    </button>
+                </div>
+
+                <!-- Texto motivacional -->
+                <p class="footer-text">
+                    El boton "No" esta nervioso AAJSAJABSJ
+                </p>
+            </div>
+        </section>
+
+        <!-- PANTALLA 2: Carta de Amor -->
+        <section id="screen-two" class="screen">
+            <div class="content-screen-two">
+                <!-- Sobre abierto -->
+                <div class="envelope-container">
+                    <div class="envelope">
+                        <div class="envelope-flap"></div>
+                        <div class="envelope-body">
+                            <!-- Carta dentro del sobre -->
+                            <div class="letter">
+                                <div class="letter-header">
+                                    <h2 class="letter-title">Para ti 💝</h2>
+                                    <p class="letter-date" id="letter-date"></p>
+                                </div>
+
+                                <div class="letter-content" id="letter-content">
+                                    <p>Hola mi niña linda 💕</p>
+
+                                    <p>Quería tomarme un momento especial para hacerte este detalle mi vida.
+                                        Eres una persona extraordinaria amor y cada día contigo es un regalo
+                                        que valoro profundamente. Gracias por permitirme compartir mis dias a tu lado.
+                                        No hay palabras suficientes
+                                        en el mundo para describir cómo me haces sentir.
+                                        Eres mi persona favorita. Gracias por ser
+                                        exactamente como eres, por elegirme cada día, por hacerme sentir tan querido.
+                                        Te amo más de lo que las palabras pueden expresar. Gracias por todo lo vivido a
+                                        tu lado amor. Espero poder seguir a tu lado t💗</p>
+
+                                    <p class="signature">Con todo mi amor<br>Fran el mejor</p>
+                                </div>
+
+                                <!-- Línea decorativa -->
+                                <div class="letter-decoration">
+                                    TE AMOOOOOOO
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GIF de celebración -->
+                <div class="celebration-gif">
+                    <img src="https://media.giphy.com/media/l0HlDtKCoqnVJcFDW/giphy.gif" alt="Celebración de amor">
+                </div>
+
+                <!-- Botones de acción -->
+                <div class="letter-actions">
+                    <button id="btn-back" class="btn btn-secondary">
+                        Atrás
+                    </button>
+                    <button id="btn-share" class="btn btn-primary">
+                        Copiar Carta
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notificación de copia -->
+        <div id="copy-notification" class="notification">
+            Carta copiada al portapapeles
+        </div>
+    </div>
+
+    <!-- Efecto de confeti -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

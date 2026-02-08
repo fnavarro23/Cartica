@@ -180,9 +180,9 @@ function copyLetterToClipboard() {
     const letterContent = document.getElementById('letter-content').innerText;
 
     navigator.clipboard.writeText(letterContent).then(() => {
-        showNotification('✅ ¡Carta copiada al portapapeles!');
+        showNotification('Carta copiada al portapapeles');
     }).catch(() => {
-        showNotification('❌ Error al copiar. Intenta de nuevo.');
+        showNotification(' Error al copiar. Intenta de nuevo.');
     });
 }
 
